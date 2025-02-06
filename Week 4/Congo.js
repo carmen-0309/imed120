@@ -14,5 +14,4 @@ function draw() {
     var redbot = canW*(1/3);
     fill(220, 36, 21);
     triangle(canW, 0, canW, canH, redbot, canH)
-    
 }
