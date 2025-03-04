@@ -1,0 +1,26 @@
+
+function setup() {
+  createCanvas(800, 500);
+  textAlign(CENTER, CENTER)
+  // frameRate();
+}
+
+function draw() {
+  background(210, 128, 255);
+
+  noStroke()
+  fill(125, 50, 220)
+  var diameter = 25
+  //   circle
+  //   for Loop
+  for (var i = 0; i < width / diameter; i ++) {
+    
+    for (var j = 0; j < height / diameter; j ++) { 
+      
+      ellipse((i * diameter)+(diameter / 2),
+              (j * diameter)+(diameter / 2),
+              diameter * noise(frameCount/500*i+j), 
+              diameter * noise(frameCount/500*i+j))
+    }
+  }
+}
