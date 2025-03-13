@@ -31,11 +31,14 @@ function keyPressed() {
   }
 }
 
-function drawKey(x, y, w, h, key) {
-  fill(200);
+function drawKey(x, y, w, h, key) { // Draw a key on the screen
+  fill(225, 225, 225);
   rect(x, y, w, h);
   fill(0);
   textSize(32);
   textAlign(CENTER, CENTER);
   text(key, x + w / 2, y + h / 2);
 }
+
+// i wasn't able to really test code because my wifi was been really bad 
+// so i made sure everything looked right, but i hope it works
